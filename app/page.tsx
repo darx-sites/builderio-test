@@ -81,7 +81,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl"
           >
-            Testing Builder.io space creation alongside Vercel deployment
+            Welcome to your Builder.io test space
           </motion.p>
 
           <motion.div
@@ -91,39 +91,32 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="flex flex-col sm:flex-row gap-4 mb-12"
           >
-            <motion.a
-              href="https://www.builder.io"
+            <a
+              href="https://builder.io"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
             >
               Visit Builder.io
-            </motion.a>
-            <motion.a
+            </a>
+            <a
               href="https://vercel.com"
               target="_blank"
               rel="noopener noreferrer"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-white text-gray-800 font-semibold rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-2 border-gray-200"
+              className="px-8 py-4 bg-white text-gray-800 font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-2 border-gray-200"
             >
               Visit Vercel
-            </motion.a>
+            </a>
           </motion.div>
 
           <motion.div
             variants={fadeIn}
             initial="initial"
             animate="animate"
-            transition={{ duration: 0.6, delay: 1.0 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl w-full mt-16"
+            transition={{ duration: 0.8, delay: 1 }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl w-full mt-16"
           >
-            <motion.div
-              whileHover={{ y: -5 }}
-              className="p-6 bg-white rounded-2xl shadow-lg border border-gray-100"
-            >
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                 <svg
                   className="w-6 h-6 text-blue-600"
@@ -139,14 +132,11 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Next.js 14</h3>
-              <p className="text-gray-600 text-sm">Built with the latest Next.js App Router</p>
-            </motion.div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Next.js 14</h3>
+              <p className="text-gray-600">Built with the latest Next.js App Router</p>
+            </div>
 
-            <motion.div
-              whileHover={{ y: -5 }}
-              className="p-6 bg-white rounded-2xl shadow-lg border border-gray-100"
-            >
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                 <svg
                   className="w-6 h-6 text-purple-600"
@@ -162,14 +152,11 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Builder.io Ready</h3>
-              <p className="text-gray-600 text-sm">Integrated for visual editing capabilities</p>
-            </motion.div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Builder.io</h3>
+              <p className="text-gray-600">Visual editing capabilities integrated</p>
+            </div>
 
-            <motion.div
-              whileHover={{ y: -5 }}
-              className="p-6 bg-white rounded-2xl shadow-lg border border-gray-100"
-            >
+            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
                 <svg
                   className="w-6 h-6 text-pink-600"
@@ -185,55 +172,37 @@ export default function Home() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-2">Vercel Deploy</h3>
-              <p className="text-gray-600 text-sm">Optimized for seamless deployment</p>
-            </motion.div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2">Vercel</h3>
+              <p className="text-gray-600">Deployed on Vercel platform</p>
+            </div>
           </motion.div>
 
           <motion.div
             variants={fadeIn}
             initial="initial"
             animate="animate"
-            transition={{ duration: 0.6, delay: 1.2 }}
-            className="mt-16 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl border border-blue-100 max-w-2xl"
+            transition={{ duration: 0.8, delay: 1.2 }}
+            className="mt-16 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl border-2 border-blue-100 max-w-2xl"
           >
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Setup Instructions</h2>
-            <ol className="text-left text-gray-700 space-y-3">
-              <li className="flex items-start">
-                <span className="inline-flex items-center justify-center w-6 h-6 mr-3 text-sm font-bold text-white bg-blue-600 rounded-full flex-shrink-0">1</span>
-                <span>Create a Builder.io account and get your API key</span>
-              </li>
-              <li className="flex items-start">
-                <span className="inline-flex items-center justify-center w-6 h-6 mr-3 text-sm font-bold text-white bg-blue-600 rounded-full flex-shrink-0">2</span>
-                <span>Add NEXT_PUBLIC_BUILDER_API_KEY to your environment variables</span>
-              </li>
-              <li className="flex items-start">
-                <span className="inline-flex items-center justify-center w-6 h-6 mr-3 text-sm font-bold text-white bg-blue-600 rounded-full flex-shrink-0">3</span>
-                <span>Deploy to Vercel and connect your Builder.io space</span>
-              </li>
-              <li className="flex items-start">
-                <span className="inline-flex items-center justify-center w-6 h-6 mr-3 text-sm font-bold text-white bg-blue-600 rounded-full flex-shrink-0">4</span>
-                <span>Start editing visually with Builder.io's drag-and-drop interface</span>
-              </li>
-            </ol>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Ready to Build?</h2>
+            <p className="text-gray-600 mb-4">
+              This is a simple test page to verify your Builder.io space creation and Vercel deployment are working correctly.
+            </p>
+            <p className="text-sm text-gray-500">
+              Next steps: Connect your Builder.io space and start creating visual content!
+            </p>
           </motion.div>
         </motion.section>
-
-        <motion.footer
-          variants={fadeIn}
-          initial="initial"
-          animate="animate"
-          transition={{ duration: 0.6, delay: 1.4 }}
-          className="text-center py-8 mt-16 border-t border-gray-200"
-        >
-          <p className="text-gray-600">
-            Built with ❤️ using Next.js 14, Tailwind CSS, and Framer Motion
-          </p>
-          <p className="text-gray-500 text-sm mt-2">
-            Ready for Builder.io integration and Vercel deployment
-          </p>
-        </motion.footer>
       </div>
+
+      <footer className="py-8 text-center text-gray-600 border-t border-gray-200">
+        <p className="text-sm">
+          Built with Next.js 14, Builder.io, and deployed on Vercel
+        </p>
+        <p className="text-xs mt-2 text-gray-400">
+          © {new Date().getFullYear()} Builder.io Test Project
+        </p>
+      </footer>
     </main>
   )
 }

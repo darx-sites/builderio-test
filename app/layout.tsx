@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Builder.io Test - Hello World',
   description: 'A simple landing page to test Builder.io space creation alongside Vercel deployment',
-  keywords: ['builder.io', 'nextjs', 'vercel', 'test'],
+  keywords: ['Builder.io', 'Next.js', 'Vercel', 'Landing Page'],
   authors: [{ name: 'DARX' }],
   openGraph: {
     title: 'Builder.io Test - Hello World',
