@@ -8,11 +8,16 @@ export const metadata: Metadata = {
   title: 'Builder.io Test - Hello World',
   description: 'A simple landing page to test Builder.io space creation alongside Vercel deployment',
   keywords: ['Builder.io', 'Next.js', 'Vercel', 'Landing Page'],
-  authors: [{ name: 'DARX' }],
+  authors: [{ name: 'DARX AI' }],
   openGraph: {
     title: 'Builder.io Test - Hello World',
     description: 'A simple landing page to test Builder.io space creation alongside Vercel deployment',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Builder.io Test - Hello World',
+    description: 'A simple landing page to test Builder.io space creation alongside Vercel deployment',
   },
 }
 
